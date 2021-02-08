@@ -1,9 +1,12 @@
 body{
   font-family: 'Open Sans', sans-serif;
-  /* background-color: pink; */
+  background-color: pink;
 }
 .text_white{
   color: #ffffff;
+}
+.bg_gray{
+background-color: #FAFAFA;
 }
 .container{
   background-color: #ffffff;
@@ -83,6 +86,34 @@ h1{
 .hero_img{
   width: 100%;
 }
+div.product{
+  padding: 60px 0 50px 0;
+  padding-left: 10px;
+  background-color: #FAFAFA;
+  margin-bottom: 30px;
+}
+img.helbiz_go_logo{
+  height: 20px;
+  display: inline-block;
+}
+a.learn{
+  display: block;
+}
+h2{
+  font-size: 18px;
+  padding: 20px 0;
+  line-height: 1.5;
+}
+img.mono_pattino,
+img.mono_bike{
+  max-height: 300px;
+  padding-top: 25px;
+}
+img.mono_vespa{
+  max-height: 275px;
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 1199px) {
  h1{
    font-size: 80px;
