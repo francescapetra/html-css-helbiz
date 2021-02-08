@@ -87,8 +87,7 @@ h1{
   width: 100%;
 }
 div.product{
-  padding: 60px 0 50px 0;
-  padding-left: 10px;
+  padding: 60px 15px 50px 15px;
   background-color: #FAFAFA;
   margin-bottom: 30px;
 }
@@ -108,20 +107,41 @@ img.mono_pattino,
 img.mono_bike{
   max-height: 300px;
   padding-top: 25px;
+  width: 100%;
 }
 img.mono_vespa{
-  max-height: 275px;
+  max-height: 270px;
   padding-top: 5px;
+  padding-bottom: 10px;
 }
-
+.box{
+  height: 200px;
+  width: calc((100% / 3) - 4px);
+  background-color: red;
+  display: inline-block;
+}
+.box_1{
+  background-color: yellow;
+}
 @media screen and (max-width: 1199px) {
  h1{
    font-size: 80px;
+ }
+ img.mono_vespa{
+   max-height: 250px;
+   padding-top: 5px;
+   padding-bottom: 10px;
  }
 }
 @media screen and (max-width: 992px) {
  h1{
    font-size: 66px;
+ }
+ img.mono_pattino,
+ img.mono_bike{
+   max-height: 300px;
+   padding-top: 25px;
+   width:auto;
  }
 }
 @media screen and (max-width: 420px) {
