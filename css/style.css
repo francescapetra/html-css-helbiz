@@ -119,12 +119,14 @@ img.mono_vespa{
 /* solo per vedere altezze */
 section{
   margin-bottom: 200px;
+  position: relative;
 }
 /* togli */
 .banner_man{
   background-image: url('../img/banner.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: 0;
   height: 500px;
   width: 100%;
   position: absolute;
@@ -146,7 +148,7 @@ section{
 }
 .box_3{
   vertical-align: bottom;
-  margin-bottom: 170px;
+  margin-bottom: 190px;
   padding-left: 35px;
 }
 h3{
@@ -177,7 +179,7 @@ img.iphone_cover{
    padding-bottom: 10px;
  }
 }
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
   .banner_man{
     background-position-x: -190px;
   }
@@ -213,15 +215,20 @@ img.iphone_cover{
     padding-left: 0;
   }
 }
-@media screen and (min-width: 640px){
+/* @media screen and (min-width: 640px){
 .banner_man{
   background-position-x: -260px;
 }
-}
+} */
 @media screen and (max-width: 639px) {
   .banner_man{
      background-position-x: -188px;
      height: 400px;
+  }
+}
+@media screen and (max-width: 550px) {
+ .box_1 {
+    left: calc(20% - 4px);
   }
 }
 
@@ -229,4 +236,9 @@ img.iphone_cover{
  h1{
    font-size: 50px;
  }
+ .box_1 {
+    left: calc(15% - 4px);
+    height: 600px;
+    margin-top: 200px;
+  }
 }
