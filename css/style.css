@@ -1,6 +1,5 @@
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: pink;
 }
 .text_white{
   color: #ffffff;
@@ -86,6 +85,9 @@ h1{
 .hero_img{
   width: 100%;
 }
+section.trio_col{
+  margin-bottom: 30px;
+}
 div.product{
   padding: 60px 15px 50px 15px;
   background-color: #FAFAFA;
@@ -114,14 +116,47 @@ img.mono_vespa{
   padding-top: 5px;
   padding-bottom: 10px;
 }
+.banner_man{
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  position: absolute;
+}
 .box{
-  height: 200px;
-  width: calc((100% / 3) - 4px);
-  background-color: red;
+  width: calc((100% / 3) - 8px);
   display: inline-block;
+  position: relative;
 }
 .box_1{
-  background-color: yellow;
+  left: calc(33% - 4px);
+  height: 600px;
+  margin-top: 200px;
+}
+.box_2{
+  right: calc(33%);
+  vertical-align: bottom;
+  margin-bottom: 170px;
+}
+.box_3{
+  vertical-align: bottom;
+  margin-bottom: 170px;
+  padding-left: 35px;
+}
+h3{
+  font-weight: 600;
+  font-size: 36px;
+}
+h4{
+  font-weight: bold;
+  font-size: 22px;
+}
+img.iphone_cover{
+  height: 85%;
+  background-image: url('../img/iphone-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1199px) {
  h1{
@@ -144,8 +179,36 @@ img.mono_vespa{
    width:auto;
  }
 }
+@media screen and (max-width: 768px) {
+  .box{
+    display: block;
+  }
+  .box_2,
+  .box_3{
+    margin: auto;
+    width: 100%;
+    right: 0;
+    line-height: 20px;
+  }
+  .box_3{
+    padding: 0;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 420px) {
  h1{
    font-size: 50px;
  }
+}
+@media screen and (max-width: 1388px) {
+  .banner_man{
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 450px;
+    width: 100%;
+    position: absolute;
+  }
 }
