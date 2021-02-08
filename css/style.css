@@ -1,6 +1,6 @@
 body{
   font-family: 'Open Sans', sans-serif;
-  background-color: pink;
+  /* background-color: pink; */
 }
 .text_white{
   color: #ffffff;
@@ -69,5 +69,32 @@ button.lang{
   display: inline-block;
   font-size: 20px;
   color: #9b9b9b;
-
+}
+.container.hero{
+  margin-top: 100px;
+  /* background-color: lightgreen; */
+  padding-bottom: 70px;
+}
+h1{
+  font-size: 100px;
+  font-weight: bold;
+  color: #000;
+}
+.hero_img{
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+ h1{
+   font-size: 80px;
+ }
+}
+@media screen and (max-width: 992px) {
+ h1{
+   font-size: 66px;
+ }
+}
+@media screen and (max-width: 420px) {
+ h1{
+   font-size: 50px;
+ }
 }
