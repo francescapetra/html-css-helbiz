@@ -65,3 +65,9 @@ button.lang{
   color: #9b9b9b;
   margin: 0 3px;
 }
+.hamb_menu{
+  display: inline-block;
+  font-size: 20px;
+  color: #9b9b9b;
+
+}
