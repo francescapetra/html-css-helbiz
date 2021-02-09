@@ -7,9 +7,6 @@ body{
 .bg_gray{
 background-color: #FAFAFA;
 }
-.container{
-  background-color: #ffffff;
-}
 .header_top{
   height: 70px;
   line-height: 70px;
@@ -18,6 +15,7 @@ background-color: #FAFAFA;
   left: 0;
   position: fixed;
   z-index: 2;
+  background-color: #ffffff;
 }
 .logo_nav{
   height: 12px;
